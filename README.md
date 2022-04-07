@@ -1,12 +1,11 @@
 # UWFinTech_Group4_Project1
 
 ## Project Title
-Real Estate Stock Analysis - 7 years
+Real Estate Stock Analysis - 2 years
 
 ## Team Members
 Maureen Kaaria
 Khaing Thwe
-Michael Jackson
 Olga Koryachek
 Arthur Lovett
 
@@ -56,5 +55,5 @@ The program will be accessed via a CLI Web Application (Voila)
 [Polygon API](https://polygon.io/docs/stocks/)
 
 # Stock List (draft)
-BEKE, OPEN, RDFN, Z, EXPI, AMT, CBRE, WY, ESS, AVB, ARE
+BEKE, OPEN, RDFN, Z, EXPI, AMT, CBRE, WY, ESS, AVB
 
