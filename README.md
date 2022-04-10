@@ -51,23 +51,24 @@ The program will be accessed via a CLI Web Application (Voila)
 # API 
 [Polygon API](https://polygon.io/docs/stocks/)
 
+---
 
 ## Contributors
 
 * Maureen Kaaria
 
-[Email](maureenkaaria@gmail.com)
+Email: maureenkaaria@gmail.com
 * Khaing Thwe
 
-[Email](khaingzt88@gmail.com)
+Email: khaingzt88@gmail.com
 * Olga Koryachek
 
-[Email](olgakoryachek@live.com)
+Email: olgakoryachek@live.com
 
 [LinkedIn](https://www.linkedin.com/in/olga-koryachek-a74b1877/?msgOverlay=true "LinkedIn")
 * Arthur Lovett
 
-[Email](arthur@arthurlovett.com)
+Email: arthur@arthurlovett.com
 
 
 ---
