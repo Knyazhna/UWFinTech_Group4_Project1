@@ -3,8 +3,11 @@
 ## Project Title
 Real Estate Stock Analysis - 2 years
 
-# Stock List (draft)
-BEKE, OPEN, RDFN, Z, EXPI, AMT, CBRE, WY, ESS, AVB
+## Team Members
+Maureen Kaaria
+Khaing Thwe
+Olga Koryachek
+Arthur Lovett
 
 ## Project Description
 Build a program which analyzes the stocks of several big real estate companies.
@@ -51,30 +54,6 @@ The program will be accessed via a CLI Web Application (Voila)
 # API 
 [Polygon API](https://polygon.io/docs/stocks/)
 
----
-
-## Contributors
-
-* Maureen Kaaria
-
-Email: maureenkaaria@gmail.com
-* Khaing Thwe
-
-Email: khaingzt88@gmail.com
-* Olga Koryachek
-
-Email: olgakoryachek@live.com
-
-[LinkedIn](https://www.linkedin.com/in/olga-koryachek-a74b1877/?msgOverlay=true "LinkedIn")
-* Arthur Lovett
-
-Email: arthur@arthurlovett.com
-
-
----
-
-## License
-
-Licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
-
+# Stock List (draft)
+BEKE, OPEN, RDFN, Z, EXPI, AMT, CBRE, WY, ESS, AVB
 
