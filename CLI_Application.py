@@ -144,7 +144,7 @@ def std_srt(stock_df):
     return standard_deviation, annualized_standard_deviation
 
 
-def sharpe(pct_df,ann_std_df):
+def sharpe(pct_df, ann_std_df):
     # Calculating Average annual return for Sharpe ratio
     average_annual_return = pct_df.mean() * 252
     
@@ -229,9 +229,9 @@ def run():
 
         elif choice == "Sharpe Ratio":
             pct_df = pct(stock_df)
-            std_df, ann_std_df = std_srt(stock_df)
-            print(std_df)
-            sharpe_ratios_srt = sharpe(pct_df, ann_std_df)
+            std_df, ann_std_df = std_srt(pct_df)
+
+            sharpe_ratios_srt = sharpe(std_df, ann_std_df)
             print(f"Sharpe Ratios (smallest to largest):\n {sharpe_ratios_srt}")
             
         
