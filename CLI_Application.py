@@ -133,6 +133,7 @@ def ytd(cum_df):
     
     return df_bar
 
+
 def std_srt(stock_df):
     # Calculating standard deviations
     standard_deviation = stock_df.std().sort_values()
@@ -142,15 +143,15 @@ def std_srt(stock_df):
     
     return standard_deviation, annualized_standard_deviation
 
-def sharpe(pct_df):
+
+def sharpe(pct_df,ann_std_df):
     # Calculating Average annual return for Sharpe ratio
     average_annual_return = pct_df.mean() * 252
-
-    # Average annual return sorted lowest to highest
-    average_annual_return.sort_values()
-            
-            # We calculate the annualized Sharpe Ratios for each of the portfolios and the S&P 500.
-            sharpe_ratios = (average_annual_return/annualized_standard_deviation).sort_values()
+    
+    # We calculate the annualized Sharpe Ratios for each of the portfolios and the S&P 500.
+    sharpe_ratios = average_annual_return/ann_std_df
+        
+    return sharpe_ratios.sort_values()
 
 def run():
     print("Loading stock data...")
@@ -219,23 +220,21 @@ def run():
             
             
         elif choice == "Standard Deviation":
-            std_srt_df, ann_std_srt_df = std_srt(stock_df)
+            pct_df = pct(stock_df)
+            std_srt_df, ann_std_srt_df = std_srt(pct_df)
             
-            print(f"Standard Deviations (smallest to largest):\n {std_srt_df.head()}")
+            print(f"Standard Deviations (smallest to largest):\n {std_srt_df}")
             
-            print(f"Standard Deviations (smallest to largest):\n {ann_std_srt_df.head()}")
+            print(f"Standard Deviations (smallest to largest):\n {ann_std_srt_df}")
 
         elif choice == "Sharpe Ratio":
-            # Calculating Average annual return for Sharpe ratio
-            average_annual_return = all_stocks_df.mean() * 252
+            pct_df = pct(stock_df)
+            std_df, ann_std_df = std_srt(stock_df)
+            print(std_df)
+            sharpe_ratios_srt = sharpe(pct_df, ann_std_df)
+            print(f"Sharpe Ratios (smallest to largest):\n {sharpe_ratios_srt}")
             
-            #Average annual return sorted lowest to highest
-            average_annual_return.sort_values()
-            
-            # We calculate the annualized Sharpe Ratios for each of the portfolios and the S&P 500.
-            sharpe_ratios = (average_annual_return/annualized_standard_deviation).sort_values()
-            
-            print(f"Sharpe Ratios (smallest to largest):\n
+        
             
 if __name__ == "__main__":
     fire.Fire(run)
