@@ -1,13 +1,15 @@
 # UWFinTech_Group4_Project1
 
 ## Project Title
-Real Estate Stock Analysis - 2 years
+Real Estate Stock Analysis - 1 year 4 months
 
 # Stock List (draft)
-BEKE, OPEN, RDFN, Z, EXPI, AMT, CBRE, WY, ESS, AVB
+ AMT, CBRE, ESS, AVB
+# S & P 500 
+SPY
 
 ## Project Description
-Build a program which analyzes the stocks of several big real estate companies.
+Build a program which analyzes the stocks of several big real estate companieS AGAINST s & p 500 FUND "SPY"
 
 The analysis:
 * Determine the fund with the most investment potential based on key risk-management metrics:
@@ -18,11 +20,11 @@ The analysis:
 * Monte Carlo Sim
 * Other helpful interactive visualizations
 
-The program will be accessed via a CLI Web Application (Voila)
+The program will be accessed via a CLI Web Application AND Voila
 
 
 ## Outline
-1.) API to pull stock information into DF - Polygon
+1.) API to pull stock information into DF - Polygon.io
 2.) Data cleaning/slicing
 3.) Analysis
 * Determine the fund with the most investment potential based on key risk-management metrics:
@@ -50,6 +52,9 @@ The program will be accessed via a CLI Web Application (Voila)
 ## Datasets to be Used
 # API 
 [Polygon API](https://polygon.io/docs/stocks/)
+
+## Resources :
+Code from Binoy Das (slack post)
 
 ---
 

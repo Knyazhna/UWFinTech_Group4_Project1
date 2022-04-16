@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import os
-import alpaca_trade_api as tradeapi
+from dotenv import load_dotenv
 import datetime as dt
 import pytz
 
