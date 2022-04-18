@@ -48,7 +48,7 @@ from MCForecastTools import MCSimulation
 # Stock List and S&P 500
  AMT, CBRE, ESS, AVB, SPY
 
-## Project Description
+## Project Usage Description
 Build a program which analyzes the stocks of several big real estate companieS AGAINST s & p 500 FUND "SPY"
 
 1.) API to pull stock information into DF - Polygon.io
@@ -61,8 +61,6 @@ Build a program which analyzes the stocks of several big real estate companieS A
 * Daily returns 
 
 ![Daily Returns](Images/DailyReturns.png)
-
-![BoxChart](Images/Boxplot.png)
 
 
 * Cumulative Returns
@@ -88,6 +86,7 @@ annualized_standard_deviation.sort_values()
 ![Sharpe Ratio](Images/Sharpe.png)
 * Betas
 
+![Betas](Images/Betas.png)
 
 
 * Monte Carlo Sim
