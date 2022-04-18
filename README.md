@@ -3,6 +3,10 @@
 ## Project Title
 Real Estate Stock Analysis - 1 year 4 months
 
+## Datasets to be Used
+# API 
+[Polygon API](https://polygon.io/docs/stocks/)
+
 # Stock List (draft)
  AMT, CBRE, ESS, AVB
 # S & P 500 
@@ -29,18 +33,19 @@ The program will be accessed via a CLI Web Application AND Voila
 3.) Analysis
 * Determine the fund with the most investment potential based on key risk-management metrics:
 * the daily returns, 
+![Daily Returns](DailyReturns.png)
+![BoxChart](Boxplot.png)
 * standard deviations
 * Cumulative Returns
+![Cumulative Returns](Cumprod.png)
 * Sharpe ratios
 * betas
 * Monte Carlo Sim
-* Other helpful interactive visualizations
-4.) Format into visually appealing way
-5.) CLI (see --> 7_Mod/Lesson/01_A_CRUD-Based_CLI_Application/Solved/a_crud_based_cli_application.py)
+![MC](MC.png)
+4.) Interactive Dashboard
+![Betas](Dashboard.png)
+5.) CLI Application
 
-# If Time Allows (Draft)
-* Dashboard
-* 
 
 
 ## Research Questions to Answer
@@ -49,9 +54,6 @@ The program will be accessed via a CLI Web Application AND Voila
 * Investment opportunities
 
 
-## Datasets to be Used
-# API 
-[Polygon API](https://polygon.io/docs/stocks/)
 
 ## Resources :
 Code from Binoy Das (slack post)
