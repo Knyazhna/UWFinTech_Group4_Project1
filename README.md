@@ -3,6 +3,9 @@
 ## Project Title
 Real Estate Stock Analysis - 1 year 4 months
 
+In this project we will use Polygon API keys to get the historical price data and perform quantitative analysis. Code and analysis of different graphs and visualization helps in determining which of the real estate stocks have the most investment potential based on key risk-management metrics: the daily returns, cummulative Returns, standard deviations, Sharpe ratios.
+
+Application is developed through CLI which gives information about the dailyt returns, cumulative return percentage, Betas, Standard Deviation and Sharpe ratios.
 
 ## Technologies
 
