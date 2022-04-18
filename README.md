@@ -32,18 +32,27 @@ The program will be accessed via a CLI Web Application AND Voila
 2.) Data cleaning/slicing
 3.) Analysis
 * Determine the fund with the most investment potential based on key risk-management metrics:
-* the daily returns, 
-![Daily Returns](DailyReturns.png)
-![BoxChart](Boxplot.png)
+* the daily returns 
+
+![Daily Returns](Images/DailyReturns.png)
+
+![BoxChart](Images/Boxplot.png)
+
 * standard deviations
 * Cumulative Returns
-![Cumulative Returns](Cumprod.png)
+
+![Cumulative Returns](Images/Cumprod.png)
+
 * Sharpe ratios
 * betas
 * Monte Carlo Sim
-![MC](MC.png)
+
+![MC](Images/MC.png)
+
 4.) Interactive Dashboard
-![Betas](Dashboard.png)
+
+![Betas](Images/Dashboard.png)
+
 5.) CLI Application
 
 
