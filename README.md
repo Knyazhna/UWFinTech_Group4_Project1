@@ -5,7 +5,9 @@ Real Estate Stock Analysis - 1 year 4 months
 
 In this project we will use Polygon API keys to get the historical price data and perform quantitative analysis. Code and analysis of different graphs and visualization helps in determining which of the real estate stocks have the most investment potential based on key risk-management metrics: the daily returns, cummulative Returns, standard deviations, Sharpe ratios.
 
-Application is developed through CLI which gives information about the dailyt returns, cumulative return percentage, Betas, Standard Deviation and Sharpe ratios.
+Application is developed through CLI which gives information about the daily returns, cumulative return percentage, Betas, Standard Deviation and Sharpe ratios.
+The program also uses Voilà library to deploy the notebook as a web application. 
+
 
 ## Technologies
 
@@ -17,28 +19,44 @@ Web Application for a Stock Analyzer project leverages python 3.7 with the follo
 
    [Voila](https://github.com/voila-dashboards/voila)
 
+
+## Libraries and Dependencies
+
+```
+import os
+import sys
+import datetime
+import requests
+import json
+import numpy as np
+import pandas as pd
+import panel as pn
+from panel.interact import interact
+from panel import widgets
+from dotenv import load_dotenv
+import hvplot.pandas
+%matplotlib inline
+import warnings
+warnings.filterwarnings('ignore')
+
+from MCForecastTools import MCSimulation
+```
+
+[MCForecastTools](https://cdn.inst-fs-pdx-prod.inscloudgate.net/e0e08ad7-c5b3-43c1-8e7c-e7efc5f1f39c/MCForecastTools.py?token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6ImNkbiJ9.eyJyZXNvdXJjZSI6Ii9lMGUwOGFkNy1jNWIzLTQzYzEtOGU3Yy1lN2VmYzVmMWYzOWMvTUNGb3JlY2FzdFRvb2xzLnB5IiwidGVuYW50IjoiY2FudmFzIiwidXNlcl9pZCI6IjE1MDQyMDAwMDAwMDAxNjY3OSIsImlhdCI6MTY0NzgwNTcwMiwiZXhwIjoxNjQ3ODkyMTAyfQ.AFw4Zrh-g9L-bjcvOiNwTlG8AXpxX7mml1s1WvuToE2tPxnQ1OWTfyfYG0LnT8vXcSD469j1DdN2BRCQ5ACDUA&content_type=text%2Fx-python)
+
+
 # Stock List and S&P 500
  AMT, CBRE, ESS, AVB, SPY
 
 ## Project Description
 Build a program which analyzes the stocks of several big real estate companieS AGAINST s & p 500 FUND "SPY"
 
-The analysis:
-* Determine the fund with the most investment potential based on key risk-management metrics:
-* the daily returns, 
-* standard deviations
-* Sharpe ratios
-* betas
-* Monte Carlo Sim
-* Other helpful interactive visualizations
-
-The program will be accessed via a CLI Web Application AND we will use the Voilà library to deploy the notebook as a web application. 
-
-
-## Outline
 1.) API to pull stock information into DF - Polygon.io
+
 2.) Data cleaning/slicing
+
 3.) Analysis
+
 * Determine the fund with the most investment potential based on key risk-management metrics:
 * Daily returns 
 
