@@ -55,7 +55,7 @@ Build a program which analyzes the stocks of several big real estate companieS A
 
 2.) Data cleaning/slicing
 
-3.) Analysis
+3.) Performance Analysis
 
 * Determine the fund with the most investment potential based on key risk-management metrics:
 * Daily returns 
@@ -64,13 +64,32 @@ Build a program which analyzes the stocks of several big real estate companieS A
 
 ![BoxChart](Images/Boxplot.png)
 
-* Standard deviations
+
 * Cumulative Returns
+```
+cumulative_returns = (1 + all_stocks_df).cumprod()
+```
+
 
 ![Cumulative Returns](Images/Cumprod.png)
 
+
+* Standard deviations
+```
+standard_deviation = all_stocks_df.std().sort_values()
+```
+* Annualized Standard Deviation
+```
+annualized_standard_deviation = standard_deviation * np.sqrt(252)
+annualized_standard_deviation.sort_values()
+```
+
 * Sharpe ratios
+![Sharpe Ratio](Images/Sharpe.png)
 * Betas
+
+
+
 * Monte Carlo Sim
 
 ![MC](Images/MC.png)
